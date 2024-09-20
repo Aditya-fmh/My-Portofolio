@@ -9,6 +9,7 @@ import linkedinDark from "../../assets/linkedin-dark.svg";
 import instagramLight from "../../assets/instagram-light.svg"
 import instagramDark from "../../assets/instagram-dark.svg"
 import { useTheme } from "../../common/ThemeContext";
+import cv from "../../assets/Aditya Firmanshah CV.pdf";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -55,7 +56,7 @@ function Hero() {
           They say curiosity killed the cat, but I believe knowledge itself
           comes from our curiosity. So I am always eager to learn new things.
         </p>
-        <a href="#">
+        <a href={cv} download>
           <button className="hover">Resume</button>
         </a>
       </div>
